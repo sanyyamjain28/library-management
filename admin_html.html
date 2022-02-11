@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!---linked our css file-->
+
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <img src="C:\Users\sayya\OneDrive\Documents\vs code\html\collegepic.jpg"
+                rnd=38062" width="200" height="100" >Admin Dashboard</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">Login</button>
+                    </li>
+
+                </ul>
+            </nav>
+            <!---navigation bar is finished--->
+        </div>
+        <div id='login-form' class='Login-page'>
+            <!---creating the form-box--->
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button
+                    type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button
+                    type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <!---creating login form--->
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id'
+                    required>
+                    <input type='password'class='input-field'placeholder='Enter Password'
+                    required>
+                    <input type='checkbox'class='check-box'><span>Remember Password</span>
+                    <button type='submit'class='submit-btn'>Log In</button>
+                </form>
+                <!---creating the registration foam--->
+                <form id='register'class ='input-group-register'>
+                    <input type='text'class='input-field'placeholder='First Name'
+                    required>
+                    <input type='text'class='input-field'placeholder='Last Name'
+                    required>
+                    <input type='email'class='input-field'placeholder='Email Id'
+                    required>
+                    <input type='password'class='input-field'placeholder='Enter Password'
+                    required>
+                    <input type='password'class='input-field'placeholder='Confirm Password'
+                    required>
+                    <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+                </form>
+                <!---now let us style for form page--->
+            </div> 
+        </div>
+    </div>
+    
+</body>
+</html>
